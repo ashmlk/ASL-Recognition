@@ -7,15 +7,18 @@ The project aims to build a machine learning model that can classify different h
 ***The project consists of the following algorithms and techniques***
 
 * Principal component analysis(PCA)
+
 As mentioned before, the dataset contains images that are 28x28, this will give us 784 dimensions which can cause major overfitting on the training dataset and therefore will dramatically decrease our prediction accuracy on the testing set. Therefore by using Principal Component Analysis (PCA) we are focusing on two major areas:
   - Future Extraction 
   - Future Elimination 
  
 * Ensembles
+
 Ensemble modeling is applying diverse models at the same time to predict an outcome, using different training sets or different models on the same training set. In our case we are using different models on our training sets and then using using ensembling models such bagging, boosting, and stacking to find the final outcome. 
 The main idea here is to find a set of weak learners and then use an ensembling model to combine the weak learners to find the best outcome. We will describe the three main ensembling meta-algorithms
 
 * Support vector machines
+
 Support Vector Machines (SVM) is essentially a binary classifier that essentially used support vectors to measure the distance between two data points in a hyperplane (Since our class is not linear) and map the data into a higher dimension feature space which then the basic idea will be each separated data will belong to different classes and can be classified. The SVM will use two degrees of measurement. Hence we define terms functional margin and geometric margin. A functional margin tells you about the accuracy and correctness of classification of a point. Geometric margin on the other hand, is the scaled version of functional margin and tells us about the euclidean distance between the hyperplane and the data points.
 
 * Histogram of oriented gradient features
